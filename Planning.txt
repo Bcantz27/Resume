@@ -1,0 +1,19 @@
+What Needs to be in the website:
+
+1. Alittle about myselfS.
+
+2. What Programming Languages and Computer Skills I know.
+
+	Front-End:		Back-End:
+	A. HTML/HTML5		A. PHP
+	B. CSS			B. MySQL
+	C. JavaScript		C. Java
+	D. Js Libs		D. C#/C/C++
+		i. jQuery.js
+		ii. Anglar.js		
+		iii. Gulp.js		
+
+	CMS
+	A. 
+3. Past Education.
+4. Past Jobs

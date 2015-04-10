@@ -1,0 +1,285 @@
+@font-face {
+    font-family:'Nurjan';
+    src: url("../fonts/Nurjan.ttf");
+}
+
+@font-face {
+    font-family:'Lobster';
+    src: url("../fonts/Lobster_1.3.otf");
+}
+
+@font-face {
+    font-family:'Chunkfive';
+    src: url("../fonts/Chunkfive.otf");
+}
+
+html {
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;   
+}
+
+body {
+    margin: auto;
+}
+
+.header{
+    margin: auto;
+    position: relative;
+    height: 90%;
+}
+
+.header {
+    width: 100%;
+    height: 0;
+    padding-top: 60%;
+    background-size: auto auto;
+}
+
+.title {
+    margin: auto;
+    vertical-align: middle;
+    position: absolute;
+    color: #EF7126;
+    text-align: center;
+    text-shadow: -3px 0 black, 0 1px black, 1px 0 black, 0 -3px black;
+    width: 100%;
+    left: 0;
+    top: 30%;
+    
+}
+
+.title h1{
+    font-family: 'Lobster', 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+    font-size: 5em;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    padding: 0 20%;
+}
+
+
+.title hr{
+    width: 80%;
+    height: 3%;
+    margin: auto;
+    text-align: center;
+    color: #F9E559;
+    top: 55%;
+}
+
+.navbar {
+    margin: auto;
+    padding: 50px;
+    position: absolute;
+    top: 75%;
+    width: 100%;
+}
+
+.navbar ul{
+    width: 700px;
+    list-style-type: none;
+    margin: 0px auto;
+    padding: 0px;
+    text-align: center;
+}
+
+.navbar ul li{
+    width:  130px;
+    float: left;
+    margin: auto;
+    border: 3px solid #473E3F;
+    border-radius: 12px;
+}
+
+.navbar ul li a{
+    font-family: 'Nurjan';
+    font-size: 1.3rem;
+    line-height: 60px;
+    display: block;
+    background-color: #F9E559;
+    text-decoration: none;
+    color: #473E3F;
+    border-radius: 9px;
+    width:  125px;
+    height: 60px;
+}
+
+.navbar ul li a:hover{
+    font-size: 1.5rem;  
+}
+.navbar ul li a:active{
+    background-color: #EF7126; 
+}
+
+.about, .skills, .projects, .edu{
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 32px;
+    background-color: #6CCECB;  
+    border: 3px solid #473E3F;
+}
+
+.about {
+    position: relative;
+    margin-top: 50px;
+    width: 90%;
+    height: 500px;
+}
+
+.about h1{
+    font-family: 'Chunkfive';   
+    text-align: center;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid black;
+    margin-top: 0px;
+}
+
+.about .details{
+    position: absolute;
+    display: block;
+    margin: auto;
+    width: 25%;
+    height: 70%;
+    top: auto;
+    left: 10%;
+}
+
+.about .details p1{
+    font-family: 'Chunkfive';
+    font-size: 155%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    vertical-align: middle;
+    text-align: left;
+    width: 100%;
+    float: left;
+    margin: auto;
+}
+
+.about .aboutme{
+    position: absolute;
+    display: block;
+    margin: auto;
+    width: 25%;
+    height: 70%;
+    top: auto;
+    left: 67%;
+}
+
+.important{
+    font-size: 150%;
+}
+
+.about .aboutme p1{
+    font-size: 100%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    vertical-align: middle;
+    text-align: left;
+    width: 100%;
+    float: left;
+    margin: auto;
+}
+
+.skills {
+    width: 90%;
+    height: 500px;
+}
+
+.skills h1{
+    font-family: 'Chunkfive';
+    text-align: center;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid black;
+    margin-top: 0px;
+}
+
+.about h1:hover, .skills h1:hover,.edu h1:hover,.projects h1:hover{
+    background-color: aquamarine;
+}
+
+.about h1:active, .skills h1:active,.edu h1:active,.projects h1:active{
+    background-color: yellow;
+}
+
+.projects{
+    width: 90%;
+    height: 500px;
+}
+
+.projects h1{
+    font-family: 'Chunkfive';
+    text-align: center;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid black;
+    margin-top: 0px;
+}
+
+.edu {
+    width: 90%;
+    height: 500px;
+}
+
+.edu h1{
+    font-family: 'Chunkfive';   
+    text-align: center;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid black;
+    margin-top: 0px;
+}
+
+.contact {
+    margin: auto;
+    border-top: 3px solid black;
+    height: 400px;
+    background-color: #473E3F;
+}
+
+.contact h1{
+    font-family: 'Chunkfive';   
+    text-align: center;
+    text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+    color: aliceblue;
+    padding: 16px 0px 0px 0px;
+}
+.contact hr{
+    width: 75%;
+    height: 6%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #F9E559;
+    border-color: black;
+    border-width: 2px;
+}
+
+.contact:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
