@@ -1,19 +1,19 @@
 What Needs to be in the website:
 
 1. Alittle about myselfS.
+	I consider myself a coding enthusiast who is versatile in full-stack web developer. The time I spend outside of working on websites is used to keep up-to-date with new/currrent web design patterns and frameworks, researching new upcoming web techologies, and play around in some video games to relieve the stress of debugging. I am mostly a self taught programmer, I have been coding on computers since I was 14, but I also have some university education in languages like C/C++ and Java. Being a self taught programmer it is easy for me to teach myself a new framework over one weekend. I have experience working with the WAMP and LAMP stack, HTML, CSS, CSS Pre-Proccessing, CSS frameworks, JavaScript, Js Libraries, PHP, MySql, and much more which I will list below in my skills section.
 
-2. What Programming Languages and Computer Skills I know.
+2. What Programming Languages and Computer Skills I know. 
 
 	Front-End:		Back-End:
-	A. HTML/HTML5		A. PHP
-	B. CSS			B. MySQL
-	C. JavaScript		C. Java
-	D. Js Libs		D. C#/C/C++
-		i. jQuery.js
-		ii. Anglar.js		
-		iii. Gulp.js		
+	A. HTML/HTML5	(4/5)	A. PHP     (5/5)
+	B. CSS/CSS3/Sass(4/5)	B. MySQL   (5/5)
+	C. JavaScript	(5/5)	C. Java
+	D. Js Libs		D. C/C++   (5/5)
+	  i. jQuery.js	(5/5)	E. CMS	   (4/5)
+	  ii. Anglar.js	(3/5)						
 
-	CMS
-	A. 
-3. Past Education.
-4. Past Jobs
+3. Past Experiences.
+4. My Websties I have made
+
+Link: Facebook, Twitter, Github, Google+

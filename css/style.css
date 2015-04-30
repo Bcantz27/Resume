@@ -22,6 +22,22 @@ html {
     box-sizing: border-box;   
 }
 
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    margin-top: 20%;
+    height: auto;
+}
+.img-circle {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+.padding{
+    padding: 50px;
+}
+
 body {
     margin: auto;
 }
@@ -41,6 +57,7 @@ body {
 
 .title {
     margin: auto;
+    visibility: hidden;
     vertical-align: middle;
     position: absolute;
     color: #EF7126;
@@ -93,6 +110,7 @@ body {
     margin: auto;
     border: 3px solid #473E3F;
     border-radius: 12px;
+    margin: 0px 5px;
 }
 
 .navbar ul li a{
@@ -115,142 +133,99 @@ body {
     background-color: #EF7126; 
 }
 
-.about, .skills, .projects, .edu{
+.aboutme p1{
+    font-family: sans-serif;
+    display: block;
+    line-height: 22px;
+    padding-right: 20px;
+    border-right: 2px solid black;
+}
+
+.detail{
+    font-size: 150%;
+}
+
+strong{
+    font-family: monospace;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.details{
+    margin-top: 25%;
+    border-left: 2px solid black;
+    font-family: monospace;
+}
+
+.edu,
+.about,
+.projects,
+.skills {
+    width: 80%;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
     border-radius: 32px;
-    background-color: #6CCECB;  
+    background-color: #6CCECB;
     border: 3px solid #473E3F;
+    visibility: hidden;
 }
 
-.about {
-    position: relative;
-    margin-top: 50px;
-    width: 90%;
-    height: 500px;
-}
-
-.about h1{
-    font-family: 'Chunkfive';   
-    text-align: center;
-    border-top-left-radius: 28px;
-    border-top-right-radius: 28px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: 3px solid black;
-    margin-top: 0px;
-}
-
-.about .details{
-    position: absolute;
-    display: block;
-    margin: auto;
-    width: 25%;
-    height: 70%;
-    top: auto;
-    left: 10%;
-}
-
-.about .details p1{
-    font-family: 'Chunkfive';
-    font-size: 155%;
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    vertical-align: middle;
-    text-align: left;
-    width: 100%;
-    float: left;
-    margin: auto;
-}
-
-.about .aboutme{
-    position: absolute;
-    display: block;
-    margin: auto;
-    width: 25%;
-    height: 70%;
-    top: auto;
-    left: 67%;
-}
-
-.important{
-    font-size: 150%;
-}
-
-.about .aboutme p1{
-    font-size: 100%;
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    vertical-align: middle;
-    text-align: left;
-    width: 100%;
-    float: left;
-    margin: auto;
-}
-
-.skills {
-    width: 90%;
-    height: 500px;
-}
-
+.edu h1,
+.about h1,
+.projects h1,
 .skills h1{
     font-family: 'Chunkfive';
     text-align: center;
-    border-top-left-radius: 28px;
-    border-top-right-radius: 28px;
     padding-top: 20px;
     padding-bottom: 20px;
     border-bottom: 3px solid black;
     margin-top: 0px;
+
 }
 
-.about h1:hover, .skills h1:hover,.edu h1:hover,.projects h1:hover{
-    background-color: aquamarine;
-}
-
-.about h1:active, .skills h1:active,.edu h1:active,.projects h1:active{
-    background-color: yellow;
-}
-
-.projects{
-    width: 90%;
-    height: 500px;
-}
-
-.projects h1{
-    font-family: 'Chunkfive';
+#skillsaccordion h2{
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: aqua;
     text-align: center;
-    border-top-left-radius: 28px;
-    border-top-right-radius: 28px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: 3px solid black;
-    margin-top: 0px;
+    border: 2px solid black;
+    display: block;
 }
-
-.edu {
-    width: 90%;
-    height: 500px;
-}
-
-.edu h1{
-    font-family: 'Chunkfive';   
+#skillsaccordion h3{
+    margin-top: 0;
+    margin-bottom: 0;
     text-align: center;
-    border-top-left-radius: 28px;
-    border-top-right-radius: 28px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: 3px solid black;
-    margin-top: 0px;
+}
+#skillsaccordion p{
+    margin-top: 0;
+    text-align: center;
+    display: block;
+}
+
+#skillsaccordion{
+    border: 2px solid black;
+    background-color: beige;
+    margin-bottom: 50px;
+}
+
+.accordionContents{
+    padding-top: 0px;
+    background-color: beige;
+}
+
+.skilllist{
+    text-align: right;
+    padding-left: 150px;
+    list-style: none;
+}
+
+.fa-star:hover {
+    color:red;
+}
+
+.rating{
+    list-style: none;
 }
 
 .contact {
