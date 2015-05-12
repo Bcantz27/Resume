@@ -19,13 +19,12 @@ html {
 }
 
 *, *:before, *:after {
-    box-sizing: border-box;   
+    box-sizing: border-box;
 }
 
 .img-responsive {
     display: block;
     max-width: 100%;
-    margin-top: 20%;
     height: auto;
 }
 .img-circle {
@@ -34,44 +33,75 @@ html {
     width: 200px;
 }
 
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
 .padding{
     padding: 50px;
 }
 
 body {
     margin: auto;
+    /*background-image: url("/images/dark_embroidery.png");*/
 }
 
 .header{
-    margin: auto;
     position: relative;
-    height: 90%;
+    width: 100%;
+    margin: auto;
+    height: 500px;
 }
 
-.header {
-    width: 100%;
-    height: 0;
-    padding-top: 60%;
-    background-size: auto auto;
+#socialmedia{
+    position: absolute;
+    margin: auto;
+    z-index: 1;
+}
+
+#socialmedia ul{
+    list-style-type: none;
+}
+
+#socialmedia ul li{
+    float: left;
+    padding-left: 10px;
+}
+
+#socialmedia ul li a:visited,
+#socialmedia ul li a{
+    color: black;
+}
+#socialmedia ul li a:hover{
+    color: red;
 }
 
 .title {
+    position: relative;
     margin: auto;
     visibility: hidden;
     vertical-align: middle;
-    position: absolute;
     color: #EF7126;
     text-align: center;
     text-shadow: -3px 0 black, 0 1px black, 1px 0 black, 0 -3px black;
     width: 100%;
     left: 0;
-    top: 30%;
-    
+    top: 90px;
+    font-size: 2em;
+
 }
 
 .title h1{
     font-family: 'Lobster', 'Arial Black', 'Arial Bold', Gadget, sans-serif;
-    font-size: 5em;
     margin: auto;
     text-align: center;
     position: relative;
@@ -89,15 +119,16 @@ body {
 }
 
 .navbar {
+    visibility: hidden;
     margin: auto;
     padding: 50px;
-    position: absolute;
-    top: 75%;
+    position: relative;
+    top: 130px;
     width: 100%;
 }
 
 .navbar ul{
-    width: 700px;
+    width: 100%;
     list-style-type: none;
     margin: 0px auto;
     padding: 0px;
@@ -127,18 +158,19 @@ body {
 }
 
 .navbar ul li a:hover{
-    font-size: 1.5rem;  
+    font-size: 1.5rem;
 }
 .navbar ul li a:active{
-    background-color: #EF7126; 
+    background-color: #EF7126;
 }
 
 .aboutme p1{
     font-family: sans-serif;
     display: block;
     line-height: 22px;
+    margin: 40px;
+    margin-top: 0px;
     padding-right: 20px;
-    border-right: 2px solid black;
 }
 
 .detail{
@@ -151,10 +183,17 @@ strong{
     font-weight: 900;
 }
 
+.about img{
+    margin-left: 22%;
+}
+
 .details{
-    margin-top: 25%;
-    border-left: 2px solid black;
+    margin: 40px;
+    margin-top: 0;
+    padding-left: 20px;
+    padding-top: 69px;
     font-family: monospace;
+    float: left;
 }
 
 .edu,
@@ -168,7 +207,7 @@ strong{
     border-radius: 32px;
     background-color: #6CCECB;
     border: 3px solid #473E3F;
-    visibility: hidden;
+    /*visibility: hidden;*/
 }
 
 .edu h1,
@@ -177,11 +216,12 @@ strong{
 .skills h1{
     font-family: 'Chunkfive';
     text-align: center;
+    font-size: 1.5em;
     padding-top: 20px;
     padding-bottom: 20px;
     border-bottom: 3px solid black;
     margin-top: 0px;
-
+    width: 100%;
 }
 
 #skillsaccordion h2{
@@ -207,6 +247,12 @@ strong{
     border: 2px solid black;
     background-color: beige;
     margin-bottom: 50px;
+    margin: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.accordionContents[id="sa"] li{
+
 }
 
 .accordionContents{
@@ -228,33 +274,281 @@ strong{
     list-style: none;
 }
 
-.contact {
-    margin: auto;
-    border-top: 3px solid black;
-    height: 400px;
-    background-color: #473E3F;
+.edu p{
+    position: absolute;
+    display: table-cell;
+    vertical-align: middle;
 }
 
-.contact h1{
-    font-family: 'Chunkfive';   
-    text-align: center;
-    text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
-    color: aliceblue;
-    padding: 16px 0px 0px 0px;
-}
-.contact hr{
-    width: 75%;
-    height: 6%;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    background-color: #F9E559;
-    border-color: black;
-    border-width: 2px;
+.edu img{
+    width: 50%;
+    float: right;
 }
 
-.contact:after {
-    content: "";
-    display: table;
-    clear: both;
+#contact {
+    background-color:#F2F7F9;
+    width:465px;
+    padding:20px;
+    margin: 50px auto;
+    border: 6px solid #8FB5C1;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    border-radius:15px;
+    position:relative;
 }
 
+#contact h1 {
+    font-size:42px;
+}
+
+#contact h2 {
+    margin-bottom:15px;
+    font-style:italic;
+    font-weight:normal;
+}
+
+#contact input,
+#contact select,
+#contact textarea,
+#contact label {
+    font-size:15px;
+    margin-bottom:2px;
+}
+
+#contact input,
+#contact select,
+#contact textarea {
+    width:80%;
+    border: 1px solid #CEE1E8;
+    margin-bottom:20px;
+    padding:4px;
+}
+
+#contact input:focus,
+#contact select:focus,
+#contact textarea:focus {
+    border: 1px solid #AFCDD8;
+    background-color: #EBF2F4;
+}
+
+#contact textarea {
+    height:150px;
+    resize: none;
+}
+
+#contact label {
+    display:block;
+}
+
+#contact .required {
+    font-weight:bold;
+    color:#F00;
+}
+
+#contact #submit-button {
+    width: 100px;
+    background-color:#333;
+    color:#FFF;
+    border:none;
+    display:block;
+    float:right;
+    margin-bottom:0px;
+    margin-right:6px;
+    background-color:#8FB5C1;
+    -moz-border-radius:8px;
+}
+
+#contact #submit-button:hover {
+    background-color: #A6CFDD;
+}
+
+#contact #submit-button:active {
+    position:relative;
+    top:1px;
+}
+
+#contact #loading {
+    width:32px;
+    height:32px;
+    display:block;
+    position:absolute;
+    right:130px;
+    bottom:16px;
+    display:none;
+}
+
+#errors {
+    border:solid 1px #E58E8E;
+    padding:10px;
+    margin:25px 0px;
+    display:block;
+    width:437px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    display:none;
+}
+
+#errors li {
+    padding:2px;
+    list-style:none;
+}
+
+#errors li:before {
+    content: ' - ';
+}
+
+#errors #info {
+    font-weight:bold;
+}
+
+#errors #info:before {
+    content: '';
+}
+
+#success {
+    border:solid 1px #83D186;
+    padding:25px 10px;
+    margin:25px 0px;
+    display:block;
+    width:437px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    font-weight:bold;
+    display:none;
+}
+
+#errors.visible, #success.visible {
+    display:block;
+}
+
+#req-field-desc {
+    font-style:italic;
+}
+
+/* Remove box shadow firefox, chrome and opera put around required fields. It looks rubbish. */
+input:required, textarea:required {
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    -o-box-shadow:none;
+    box-shadow:none;
+}
+
+/* Normalize placeholder styles */
+
+/* chrome, safari */
+::-webkit-input-placeholder {
+    color:#CCC;
+    font-style:italic;
+}
+
+/* mozilla */
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color:#CCC;
+    font-style:italic;
+}
+
+/* ie (faux placeholder) */
+input.placeholder-text, textarea.placeholder-text  {
+    color:#CCC;
+    font-style:italic;
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .header{
+        height: 650px;
+    }
+    .title {
+        top: 150px;
+        font-size: 2em;
+    }
+    .navbar {
+        visibility: visible;
+        top: 300px;
+    }
+
+    .navbar ul{
+        width: 700px;
+    }
+
+    .navbar ul li{
+        width:  130px;
+    }
+
+    .navbar ul li a{
+        font-size: 1.3rem;
+        line-height: 60px;
+        border-radius: 9px;
+        width:  125px;
+        height: 60px;
+    }
+
+    #socialmedia{
+        position: fixed;
+        margin: auto;
+        z-index: 1;
+        top: 200px;
+    }
+
+    #socialmedia ul{
+        list-style-type: none;
+    }
+
+    #socialmedia ul li{
+        float: none;
+    }
+
+    .aboutme p1{
+        border-right: 2px solid black;
+    }
+
+    .about img{
+        margin-top: 23%;
+        margin-left: 0;
+    }
+
+    .details{
+        position: absolute;
+        margin: 40px;
+        margin-top: 0;
+        padding-left: 20px;
+        padding-top: 69px;
+        padding-bottom: 69px;
+        border-left: 2px solid black;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .header{
+        height: 900px;
+    }
+    .title {
+        top: 200px;
+        font-size: 2.5em;
+    }
+    .navbar {
+        visibility: visible;
+        top: 400px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .header{
+        height: 1000px;
+    }
+    .title {
+        top: 200px;
+        font-size: 3em;
+    }
+    .navbar {
+        visibility: visible;
+        top: 500px;
+    }
+}
