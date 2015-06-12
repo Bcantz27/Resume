@@ -14,7 +14,6 @@
 }
 
 html {
-    font-size: 1em;
     box-sizing: border-box;
 }
 
@@ -22,17 +21,55 @@ html {
     box-sizing: border-box;
 }
 
-.img-responsive {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-.img-circle {
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
+.tpadding {
+    padding-top: 0;
 }
 
+.cursive {
+    font-family: 'Fugaz One', cursive;
+}
+
+.chunkfive {
+    font-family: 'Chunkfive', 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+}
+
+.deepshadow {
+    color: #EF7126;
+    text-shadow:
+      0 -1px 0 #EF7126,
+      0 1px 0 #2e2e2e,
+      0 2px 0 #2c2c2c,
+      0 3px 0 #2a2a2a,
+      0 4px 0 #282828,
+      0 5px 0 #262626,
+      0 6px 0 #242424,
+      0 7px 0 #222,
+      0 8px 0 #202020,
+      0 9px 0 #1e1e1e,
+      0 10px 0 #1c1c1c,
+      0 11px 0 #1a1a1a,
+      0 12px 0 #181818,
+      0 13px 0 #161616,
+      0 14px 0 #141414,
+      0 15px 0 #121212,
+      0 22px 30px rgba(0, 0, 0, 0.9);
+  }
+
+.hit-the-floor {
+    color: #403f3f;
+    font-size: 16em;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+.insetshadow {
+    color: #3f6c6a;
+    background-color: #6CCECB;
+    letter-spacing: .1em;
+    text-shadow:
+      -1px -1px 1px #111,
+      2px 2px 1px #62bebb;
+  }
 /* centered columns styles */
 .row-centered {
     text-align:center;
@@ -46,13 +83,26 @@ html {
     margin-right:-4px;
 }
 
-.padding{
-    padding: 50px;
+.hori_center {
+    position: relative;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+}
+
+.vert_center {
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.text_center {
+    text-align: center;
 }
 
 body {
     margin: auto;
-    /*background-image: url("/images/dark_embroidery.png");*/
+    background-image: url("../images/green-fibers_@2X.png");
 }
 
 .header{
@@ -66,6 +116,7 @@ body {
     position: absolute;
     margin: auto;
     z-index: 1;
+    margin-left: 0px;
 }
 
 #socialmedia ul{
@@ -74,7 +125,13 @@ body {
 
 #socialmedia ul li{
     float: left;
-    padding-left: 10px;
+    padding-left: 8px;
+}
+
+#socialmedia ul li a{
+    background-color: white;
+    padding-top: 25px;
+    border-radius: 8px;
 }
 
 #socialmedia ul li a:visited,
@@ -90,19 +147,16 @@ body {
     margin: auto;
     visibility: hidden;
     vertical-align: middle;
-    color: #EF7126;
     text-align: center;
-    text-shadow: -3px 0 black, 0 1px black, 1px 0 black, 0 -3px black;
     width: 100%;
     left: 0;
     top: 90px;
-    font-size: 2em;
-
 }
 
 .title h1{
     font-family: 'Lobster', 'Arial Black', 'Arial Bold', Gadget, sans-serif;
     margin: auto;
+    font-size: 40px;
     text-align: center;
     position: relative;
     padding: 0 20%;
@@ -136,323 +190,107 @@ body {
 }
 
 .navbar ul li{
-    width:  130px;
+    width:  100px;
     float: left;
     margin: auto;
     border: 3px solid #473E3F;
     border-radius: 12px;
     margin: 0px 5px;
+    -webkit-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.6);
+    -moz-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.6);
+    box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.6);
 }
 
 .navbar ul li a{
     font-family: 'Nurjan';
-    font-size: 1.3rem;
+    font-size: 18px;
     line-height: 60px;
     display: block;
     background-color: #F9E559;
     text-decoration: none;
     color: #473E3F;
     border-radius: 9px;
-    width:  125px;
+    width:  100px;
     height: 60px;
 }
 
 .navbar ul li a:hover{
-    font-size: 1.5rem;
+    font-size: 20px;
 }
+
 .navbar ul li a:active{
     background-color: #EF7126;
 }
 
-.aboutme p1{
-    font-family: sans-serif;
-    display: block;
-    line-height: 22px;
-    margin: 40px;
-    margin-top: 0px;
-    padding-right: 20px;
+.section_head {
+    font-family: 'Chunkfive';
+    padding-bottom: 20px;
+    font-size: 32px;
+    text-align: center;
+    border-bottom: 2px solid black;
 }
 
-.detail{
-    font-size: 150%;
+.container[id="about"] {
+    margin-top: 200px;
 }
 
-strong{
-    font-family: monospace;
-    font-size: 22px;
-    font-weight: 900;
-}
-
-.about img{
-    margin-left: 22%;
-}
-
-.details{
-    margin: 40px;
-    margin-top: 0;
-    padding-left: 20px;
-    padding-top: 69px;
-    font-family: monospace;
-    float: left;
-}
-
-.edu,
-.about,
-.projects,
-.skills {
-    width: 80%;
+.container[id="about"],
+.container[id="skills"],
+.container[id="projects"],
+.container[id="edu"]{
+    width: 90%;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
+    padding-bottom: 20px;
     border-radius: 32px;
     background-color: #6CCECB;
+    /*background-image: url("../images/green_dust_scratch.png");*/
     border: 3px solid #473E3F;
     /*visibility: hidden;*/
+    -webkit-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.6);
+    -moz-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.6);
+    box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.6);
 }
 
-.edu h1,
-.about h1,
-.projects h1,
-.skills h1{
-    font-family: 'Chunkfive';
+.container[id="edu"] ul{
     text-align: center;
-    font-size: 1.5em;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: 3px solid black;
-    margin-top: 0px;
-    width: 100%;
+    list-style-type: none;
+}
+
+#skillsaccordion {
+    margin: 0px 30px;
 }
 
 #skillsaccordion h2{
-    margin-top: 0;
-    margin-bottom: 0;
     background-color: aqua;
     text-align: center;
     border: 2px solid black;
-    display: block;
+    margin: 0;
 }
-#skillsaccordion h3{
-    margin-top: 0;
-    margin-bottom: 0;
+
+#skillsaccordion h2:hover{
+    background-color: #069898;
+}
+
+.accordionContents {
+    background-color: white;
     text-align: center;
+    /*background-image: url("../images/old_mathematics.png");*/
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    padding: 0px 20px;
+    padding-bottom: 20px;
 }
-#skillsaccordion p{
-    margin-top: 0;
+
+.accordionContents ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#edu p {
     text-align: center;
-    display: block;
-}
-
-#skillsaccordion{
-    border: 2px solid black;
-    background-color: beige;
-    margin-bottom: 50px;
-    margin: 0px 20px;
-    margin-bottom: 20px;
-}
-
-.accordionContents[id="sa"] li{
-
-}
-
-.accordionContents{
-    padding-top: 0px;
-    background-color: beige;
-}
-
-.skilllist{
-    text-align: right;
-    padding-left: 150px;
-    list-style: none;
-}
-
-.fa-star:hover {
-    color:red;
-}
-
-.rating{
-    list-style: none;
-}
-
-.edu p{
-    position: absolute;
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.edu img{
-    width: 50%;
-    float: right;
-}
-
-#contact {
-    background-color:#F2F7F9;
-    width:465px;
-    padding:20px;
-    margin: 50px auto;
-    border: 6px solid #8FB5C1;
-    -moz-border-radius:15px;
-    -webkit-border-radius:15px;
-    border-radius:15px;
-    position:relative;
-}
-
-#contact h1 {
-    font-size:42px;
-}
-
-#contact h2 {
-    margin-bottom:15px;
-    font-style:italic;
-    font-weight:normal;
-}
-
-#contact input,
-#contact select,
-#contact textarea,
-#contact label {
-    font-size:15px;
-    margin-bottom:2px;
-}
-
-#contact input,
-#contact select,
-#contact textarea {
-    width:80%;
-    border: 1px solid #CEE1E8;
-    margin-bottom:20px;
-    padding:4px;
-}
-
-#contact input:focus,
-#contact select:focus,
-#contact textarea:focus {
-    border: 1px solid #AFCDD8;
-    background-color: #EBF2F4;
-}
-
-#contact textarea {
-    height:150px;
-    resize: none;
-}
-
-#contact label {
-    display:block;
-}
-
-#contact .required {
-    font-weight:bold;
-    color:#F00;
-}
-
-#contact #submit-button {
-    width: 100px;
-    background-color:#333;
-    color:#FFF;
-    border:none;
-    display:block;
-    float:right;
-    margin-bottom:0px;
-    margin-right:6px;
-    background-color:#8FB5C1;
-    -moz-border-radius:8px;
-}
-
-#contact #submit-button:hover {
-    background-color: #A6CFDD;
-}
-
-#contact #submit-button:active {
-    position:relative;
-    top:1px;
-}
-
-#contact #loading {
-    width:32px;
-    height:32px;
-    display:block;
-    position:absolute;
-    right:130px;
-    bottom:16px;
-    display:none;
-}
-
-#errors {
-    border:solid 1px #E58E8E;
-    padding:10px;
-    margin:25px 0px;
-    display:block;
-    width:437px;
-    -webkit-border-radius:8px;
-    -moz-border-radius:8px;
-    border-radius:8px;
-    display:none;
-}
-
-#errors li {
-    padding:2px;
-    list-style:none;
-}
-
-#errors li:before {
-    content: ' - ';
-}
-
-#errors #info {
-    font-weight:bold;
-}
-
-#errors #info:before {
-    content: '';
-}
-
-#success {
-    border:solid 1px #83D186;
-    padding:25px 10px;
-    margin:25px 0px;
-    display:block;
-    width:437px;
-    -webkit-border-radius:8px;
-    -moz-border-radius:8px;
-    border-radius:8px;
-    font-weight:bold;
-    display:none;
-}
-
-#errors.visible, #success.visible {
-    display:block;
-}
-
-#req-field-desc {
-    font-style:italic;
-}
-
-/* Remove box shadow firefox, chrome and opera put around required fields. It looks rubbish. */
-input:required, textarea:required {
-    -moz-box-shadow:none;
-    -webkit-box-shadow:none;
-    -o-box-shadow:none;
-    box-shadow:none;
-}
-
-/* Normalize placeholder styles */
-
-/* chrome, safari */
-::-webkit-input-placeholder {
-    color:#CCC;
-    font-style:italic;
-}
-
-/* mozilla */
-input:-moz-placeholder, textarea:-moz-placeholder {
-    color:#CCC;
-    font-style:italic;
-}
-
-/* ie (faux placeholder) */
-input.placeholder-text, textarea.placeholder-text  {
-    color:#CCC;
-    font-style:italic;
 }
 
 /* Extra small devices (phones, less than 768px) */
@@ -460,12 +298,27 @@ input.placeholder-text, textarea.placeholder-text  {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    .container[id="about"],
+    .container[id="skills"],
+    .container[id="projects"],
+    .container[id="edu"]{
+        width: 80%;
+    }
+
+    .container[id="edu"] ul{
+        text-align: left;
+        list-style-type: square;
+    }
+
     .header{
         height: 650px;
     }
     .title {
         top: 150px;
-        font-size: 2em;
+    }
+
+    .title h1{
+        font-size: 64px;
     }
     .navbar {
         visibility: visible;
@@ -473,7 +326,7 @@ input.placeholder-text, textarea.placeholder-text  {
     }
 
     .navbar ul{
-        width: 700px;
+        width: 570px;
     }
 
     .navbar ul li{
@@ -481,7 +334,7 @@ input.placeholder-text, textarea.placeholder-text  {
     }
 
     .navbar ul li a{
-        font-size: 1.3rem;
+        font-size: 24px;
         line-height: 60px;
         border-radius: 9px;
         width:  125px;
@@ -495,32 +348,20 @@ input.placeholder-text, textarea.placeholder-text  {
         top: 200px;
     }
 
+    #socialmedia {
+        margin-left: 0px;
+    }
+
     #socialmedia ul{
         list-style-type: none;
     }
 
     #socialmedia ul li{
         float: none;
+        padding-left: 0px;
+        margin-left: -15px;
     }
 
-    .aboutme p1{
-        border-right: 2px solid black;
-    }
-
-    .about img{
-        margin-top: 23%;
-        margin-left: 0;
-    }
-
-    .details{
-        position: absolute;
-        margin: 40px;
-        margin-top: 0;
-        padding-left: 20px;
-        padding-top: 69px;
-        padding-bottom: 69px;
-        border-left: 2px solid black;
-    }
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -530,7 +371,9 @@ input.placeholder-text, textarea.placeholder-text  {
     }
     .title {
         top: 200px;
-        font-size: 2.5em;
+    }
+    .title h1{
+        font-size: 80px;
     }
     .navbar {
         visibility: visible;
@@ -540,15 +383,30 @@ input.placeholder-text, textarea.placeholder-text  {
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+    .tpadding {
+        padding-top: 40px;
+    }
+
+    #socialmedia ul li{
+        padding-left: 8px;
+        margin-left: 0px;
+    }
+
     .header{
         height: 1000px;
     }
     .title {
         top: 200px;
-        font-size: 3em;
+    }
+    .title h1{
+        font-size: 100px;
     }
     .navbar {
         visibility: visible;
         top: 500px;
+    }
+
+    #edu p {
+        text-align: left;
     }
 }
