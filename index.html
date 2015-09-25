@@ -1,357 +1,875 @@
 <!DOCTYPE html>
-    <html lang="en">
+<html>
 
-    <head>
+<head>
 
-        <title>Bryan Cantz - Interactive Resume</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Bryan Cantz">
-        <meta name="description" content="Bryan Cantz is an programmer who is making his way into the world of web development.">
-        <link rel="stylesheet" href="css/tidy.css" type="text/css">
-        <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-        <link href='http://fonts.googleapis.com/css?family=Fugaz+One' rel='stylesheet' type='text/css'>
-        <link rel="shortcut icon" href="./favicon.png"/>
-        <link rel="icon" href="./favicon.png" />
+    <title>Bryan Cantz - Interactive Resume</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="Bryan Cantz">
+    <meta name="keywords" content="Responsive, Template">
+    <meta name="robots" content="all">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700,800,400,600' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/prettyPhoto.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="icon" href="/favicon.png" />
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-        <script type="text/javascript" src="js/js.min.js"></script>
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
 
-        <script>
-        eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('(4(i,s,o,g,r,a,m){i[\'d\']=r;i[r]=i[r]||4(){(i[r].q=i[r].q||[]).c(e)},i[r].l=1*f b();a=s.j(o),m=s.5(o)[0];a.6=1;a.7=g;m.8.k(a,m)})(h,x,\'z\',\'//w.v-3.p/3.u\',\'2\');2(\'B\',\'n-t-1\',\'A\');2(\'y\',\'9\');',38,38,'||ga|analytics|function|getElementsByTagName|async|src|parentNode|pageview||Date|push|GoogleAnalyticsObject|arguments|new||window||createElement|insertBefore|||UA||com||||63990405|js|google|www|document|send|script|auto|create'.split('|'),0,{}))
-        </script>
-    </head>
 
-    <body>
-        <div class="header">
-            <div id="socialmedia">
-                <ul>
-                    <li><a href="https://www.facebook.com/bryan.cantz" target="_blank"><span class="fa fa-facebook-official fa-4x"></span></a></li>
-                    <li><a href="https://twitter.com/BCantz27" target="_blank"><span class="fa fa-twitter-square fa-4x"></a></li>
-                    <li><a href="https://github.com/Bcantz27" target="_blank"><span class="fa fa-github-square fa-4x"></a></li>
-                    <li><a href="https://www.linkedin.com/pub/bryan-cantz/90/385/351" target="_blank"><span class="fa fa-linkedin-square fa-4x"></a></li>
-                </ul>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="title">
-                        <h1 id="title_1" class="deepshadow">Bryan Cantz's</h1>
-                        <hr>
-                        <h1 id="title_2" class="deepshadow">Interactive resume</h1>
+
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+        <noscript>JavaScript is off. Please enable to view full site.</noscript>
+    </div>
+
+    <div class="wrapper">
+        <div class="container">
+
+            <header id="home">
+
+                <div class="head-image bg-image" data-bg-image="images/head-image.jpg">
+                    <div class="avatar wow bounceInDown">
+                        <img alt="avatar" src="images/avatar.jpg" />
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="navbar" id="navbar">
-                        <ul>
-                            <li><a href="#about" class="smoothScroll">About</a></li>
-                            <li><a href="#skills" class="smoothScroll">Skills</a></li>
-                            <li><a href="#projects" class="smoothScroll">Projects</a></li>
-                            <li><a href="#edu" class="smoothScroll">Experience</a></li>
+
+                <div class="sticky-paper-head has-shadow">
+                    <div class="content">
+                        <div class="social-icons">
+                            <ul>
+                                <li>
+                                    <a class="fa fa-facebook" target="_blank" href="https://www.facebook.com/bryan.cantz"></a>
+                                </li>
+                                <li>
+                                    <a class="fa fa-twitter" target="_blank" href="https://twitter.com/BCantz27"></a>
+                                </li>
+                                <li>
+                                    <a class="fa fa-linkedin" target="_blank" href="https://www.linkedin.com/pub/bryan-cantz/90/385/351"></a>
+                                </li>
+                                <li>
+                                    <a class="fa fa-github" target="_blank" href="https://github.com/Bcantz27"></a>
+                                </li>
+                                <li>
+                                    <a href="./Resume.pdf" target="_blank" class="fa fa-download"></a>
+                                </li>                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12  nav-menu top-menu-holder">
+                    <nav class="hidden-xs visible-lg ">
+                        <ul class="nav">
+                            <li class="active">
+                                <a href="#home">home</a>
+                            </li>
+                            <li>
+                                <a href="#profile">profile</a>
+                            </li>
+                            <li>
+                                <a href="#education">education</a>
+                            </li>
+                            <li>
+                                <a href="#experiences">experiences</a>
+                            </li>
+                            <li>
+                                <a href="#skills">skills</a>
+                            </li>
+                            <li>
+                                <a href="#portfolio">portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#contact">contact</a>
+                            </li>
+
+
                         </ul>
+
+                    </nav>
+
+                    <select class="top-drop-menu nav visible-md visible-sm visible-xs hidden-lg">
+                        <option value="#home" selected="selected">
+                            Home
+                        </option>
+
+                        <option value="#profile">
+                            Profile
+                        </option>
+                        <option value="#education">
+                            Education
+                        </option>
+                        <option value="#experiences">
+                            Experiences
+                        </option>
+
+                        <option value="#skills">
+                            Skills
+                        </option>
+
+                        <option value="#portfolio">
+                            Portfolio
+                        </option>
+
+                        <option value="#contact">
+                            Contact
+                        </option>
+
+                    </select>
+                </div>
+
+            </header>
+            <section id="info" class="big-name">
+                <div class="sticky-paper-head has-shadow ">
+                    <div class="content">
+                        <h1>Bryan Cantz</h1>
+                        <div class="short-tag">
+                            Full Stack Developer
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
+                <div class="sticky-paper-body has-shadow ">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-7">
+                                <div class="le-paragraph">
+                                    <p>
+                                        I consider myself a coding enthusiast who is versatile in web development. There is nothing more satisfying to me then developing websites and watching them come to life. The time I spend outside of working on websites I use to keep up-to-date with new frameworks, researching upcoming web techologies, and playing video games to relieve the stress of debugging.
+                                    </p>
+                                    <p>
 
-        <div class="container" id="about">
-            <div class="row">
-                <h3 class="section_head">About Me</h3>
-                <div class="col-lg-3 col-lg-offset-1">
-                    <img style="width: 230px; height: 200px;" src="./images/mypicture.jpg" class="img-circle img-responsive hori_center">
-                    <hr>
-                    <table class="hori_center" style="width:100%;">
-                        <tr>
-                            <td class="chunkfive">Name</td>
-                            <td class="cursive">Bryan Cantz</td>
-                        </tr>
-                        <tr>
-                            <td class="chunkfive">Age</td>
-                            <td class="cursive" id="age">23</td>
-                        </tr>
-                        <tr>
-                            <td class="chunkfive">From</td>
-                            <td class="cursive">Broomall, PA</td>
-                        </tr>
-                        <tr>
-                            <td class="chunkfive">Email</td>
-                            <td class="cursive"><a href="mailto:BryanCantz@comcast.net">BryanCantz@comcast.net</a></td>
-                        </tr>
-                        <tr>
-                            <td class="chunkfive">Resume</td>
-                            <td class="cursive"><a href="./Resume.pdf" style="margin-left: 10px;" target="_blank"><span class="fa fa-file-pdf-o fa-2x"></a><a href="./Resume.docx" style="margin-left: 10px;" target="_blank"><span class="fa fa-file-word-o fa-2x"></a></td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="col-lg-6 col-lg-offset-1" style="padding-top: 20px;">
-                    <p class="cursive">I consider myself a coding enthusiast who is versatile in web development. There is nothing more satisfying to me then developing websites and watching them come to life. The time I spend outside of working on websites I use to keep up-to-date with new frameworks, researching upcoming web techologies, and playing video games to relieve the stress of debugging. I am mostly a self taught programmer, I have been programming since 2009, but I also have some university education in languages like C/C++ and Java. Being a self taught programmer, it is easy for me to teach myself a new framework quickly. I have experience working with HTML, CSS, JavaScript, and much more which I will list below in my skills section. You can also click the icon under my details to see a copy of my paper resume, if you prefer that.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container" id="skills">
-            <div class="row">
-                <h3 class="section_head">Skills</h3>
-                <div class="col-lg-12">
-                    <div id="skillsaccordion">
-                        <h2>Programming Languages</h2>
-                        <div class="accordionContents">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <ul>
-                                        <h3 class="chunkfive"><u>Front-End</u></h3>
-                                        <li>HTML</li>
-                                        <li>XML</li>
-                                        <li>CSS</li>
-                                        <li>Javascript</li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-4">
-                                    <ul>
-                                        <h3 class="chunkfive"><u>Back-End</u></h3>
-                                        <li>Java</li>
-                                        <li>C++</li>
-                                        <li>PHP</li>
-                                        <li>JSON</li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-4">
-                                    <ul>
-                                        <h3 class="chunkfive"><u>Databases</u></h3>
-                                        <li>MySQL</li>
-                                        <li>MongoDB</li>
-                                    </ul>
+                                        I am mostly a self taught programmer, I have been programming since 2009, but I also have some university education in languages like C/C++ and Java. Being a self taught programmer, it is easy for me to teach myself a new framework quickly. I have experience working with HTML, CSS, JavaScript, and much more which I will list below in my skills section.
+                                    </p>
                                 </div>
                             </div>
-                        </div>
-                        <h2>Frameworks and Libraries</h2>
-                        <div class="accordionContents">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <ul>
-                                        <h3 class="chunkfive"><u>CSS</u></h3>
-                                        <li>SASS/LESS</li>
-                                        <li>Jade</li>
-                                        <li>Bootstrap</li>
+                            <div class="col-xs-12 col-md-5">
+                                <div class="tabled-info-holder">
+                                    <ul class="info-holder">
+                                        <li>
+                                            <div class="info-item">
+                                                <i class="fa fa-envelope"></i>
+                                                <span>bryancantz@comcast.net</span>
+                                            </div>
+                                        </li>
                                     </ul>
-                                </div>
-                                <div class="col-lg-4">
-                                    <ul>
-                                        <h3 class="chunkfive"><u>JavaScript</u></h3>
-                                        <li>jQuery</li>
-                                        <li>Nodejs</li>
-                                        <li>Expressjs</li>
-                                        <li>SocketIO</li>
-                                        <li>Grunt/Gulp</li>
-                                        <li>NPM package manager</li>
+
+                                    <ul class="info-holder">
+                                        <li>
+                                            <div class="info-item">
+                                                <i class="fa fa-map-marker"></i>
+                                                <span>Live in: Broomall,PA</span>
+                                            </div>
+                                        </li>
                                     </ul>
-                                </div>
-                                <div class="col-lg-4">
-                                    <ul>
-                                        <h3 class="chunkfive"><u>Other</u></h3>
-                                        <li>Wordpress</li>
-                                        <li>Mailchimp</li>
-                                        <li>CDN</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <h2>Systems and Applications</h2>
-                        <div class="accordionContents">
-                            <div class="row">
-                                <div class="col-lg-3 col-xs-12">
-                                    <h3 class="chunkfive"><u>OS's</u></h3>
-                                    <ul>
-                                        <li>Windows</li>
-                                        <li>Mac/OSX</li>
-                                        <li>Linux/Unix</li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-6 col-xs-12">
-                                    <h3 class="chunkfive"><u>Applications and Tools</u></h3>
-                                    <div class="col-lg-6">
+
+                                    <div class="social-icons small">
                                         <ul>
-                                            <li>FileZilla</li>
-                                            <li>Git</li>
-                                            <li>Crome/FireFox/IE</li>
-                                            <li>Photoshop/Gimp</li>
-                                            <li>MS Office</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <ul>
-                                            <li>Visual Studios</li>
-                                            <li>Notepad++</li>
-                                            <li>VIM</li>
-                                            <li>Brackets</li>
-                                            <li>Command-line tools</li>
+                                            <li>
+                                                <a class="fa fa-facebook" target="_blank" href="https://www.facebook.com/bryan.cantz"></a>
+                                            </li>
+                                            <li>
+                                                <a class="fa fa-twitter" target="_blank" href="https://twitter.com/BCantz27"></a>
+                                            </li>
+                                            <li>
+                                                <a class="fa fa-linkedin" target="_blank" href="https://www.linkedin.com/pub/bryan-cantz/90/385/351"></a>
+                                            </li>
+                                            <li>
+                                                <a class="fa fa-github" target="_blank" href="https://github.com/Bcantz27"></a>
+                                            </li>
+                                            <li>
+                                                <a href="./Resume.pdf" target="_blank" class="fa fa-download"></a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-xs-12">
-                                    <h3 class="chunkfive"><u>Concepts</u></h3>
-                                    <ul>
-                                        <li>DOM Manipulation</li>
-                                        <li>MVC Design Pattern</li>
-                                        <li>Search Engine Optimization</li>
-                                        <li>Singleton Design Patten</li>
-                                        <li>Version Control</li>
-                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="le-hr">
+
+            <section id="profile">
+                <div class="sticky-paper-head has-shadow ">
+                    <div class="content">
+                        <h1>profile</h1>
+                    </div>
+                </div>
+                <div class="sticky-paper-body has-shadow ">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-xs-12 col-lg-6">
+                                <div class="timeline-holder wow bounceInUp">
+                                    <div class="timeline-head">
+                                        <div class="icon">
+                                            <i class="fa fa-user"></i>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <div class="profile-item timeline-item">
+                                            <div class="icon-item right">
+                                                <div class="circular-icon ">
+                                                    <i class="fa fa-child"></i>
+                                                </div>
+                                            </div>
+
+                                            <div class="profile-content timeline-content left">
+                                                <label>full name</label>
+                                                <div class="value">Bryan Cantz</div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="profile-item timeline-item">
+                                            <div class="icon-item left">
+                                                <div class="circular-icon">
+                                                    <i class="fa fa-envelope"></i>
+                                                </div>
+
+                                            </div>
+                                            <div class="profile-content timeline-content right">
+                                                <label>email address</label>
+                                                <div class="value">bryancantz@comcast.net
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="profile-item timeline-item">
+                                            <div class="icon-item right">
+                                                <div class="circular-icon">
+                                                    <i class="fa fa-birthday-cake"></i>
+                                                </div>
+
+                                            </div>
+                                            <div class="profile-content timeline-content left">
+                                                <label>birthday</label>
+                                                <div class="value">2/7/1992</div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="profile-item timeline-item">
+                                            <div class="icon-item left">
+                                                <div class="circular-icon left">
+                                                    <i class="fa fa-clock-o"></i>
+                                                </div>
+
+                                            </div>
+                                            <div class="profile-content timeline-content right">
+                                                <label>Availability</label>
+                                                <div class="value">9am-5pm EST</div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-lg-6">
+                                <div class="interests-holder">
+                                    <div class="interests-row medium">
+                                        <ul>
+                                            <li class="wow bounceInDown" data-wow-delay="0.1s">
+                                                <i class="fa fa-music"></i>
+                                                <span>Music</span>
+                                            </li>
+                                            <li class="wow bounceInDown" data-wow-delay="0.2s">
+                                                <i class="fa fa-cutlery"></i>
+                                                <span>Cooking</span>
+                                            </li>
+                                            <li class="wow bounceInDown" data-wow-delay="0.3s">
+                                                <i class="fa fa-coffee"></i>
+                                                <span>Coffee</span>
+                                            </li>
+                                            <li class="wow bounceInDown" data-wow-delay="0.4s">
+                                                <i class="fa fa-leaf"></i>
+                                                <span>Nature</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="interests-row big">
+                                        <ul>
+                                            <li class="wow bounceInDown" data-wow-delay="0.5s">
+                                                <i class="fa fa-code"></i>
+                                                <span>Coding</span>
+                                            </li>
+                                            <li class="wow bounceInDown" data-wow-delay="0.6s">
+                                                <i class="fa fa-graduation-cap"></i>
+                                                <span>Science</span>
+                                            </li>
+                                            <li class="wow bounceInDown" data-wow-delay="0.7s">
+                                                <i class="fa fa-pencil"></i>
+                                                <span>Design</span>
+                                            </li>
+                                            <li class="wow bounceInDown" data-wow-delay="0.8s">
+                                                <i class="fa fa-gamepad"></i>
+                                                <span>Gaming</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+                                    <div class="title wow fadeIn">
+                                        <h1>hobbies & interests</h1>
+                                    </div>
+                                    <div class="interests-row big">
+                                        <ul>
+                                            <li class="wow bounceInDown" data-wow-delay="0.1s">
+                                                <i class="fa fa-rocket"></i>
+                                                <span>Space</span>
+                                            </li>
+                                            <li class="wow bounceInDown" data-wow-delay="0.2s">
+                                                <i class="fa fa-cogs"></i>
+                                                <span>Tech</span>
+                                            </li>
+                                            <li class="wow bounceInDown" data-wow-delay="0.3s">
+                                                <i class="fa fa-heart"></i>
+                                                <span>Health</span>
+                                            </li>
+                                            <li class="wow bounceInDown" data-wow-delay="0.4s">
+                                                <i class="fa fa-paint-brush"></i>
+                                                <span>Art</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="interests-row medium">
+                                        <ul>
+                                            <li class="wow bounceInDown" data-wow-delay="0.5s">
+                                                <i class="fa fa-bank"></i>
+                                                <span>Politics</span>
+                                            </li>
+                                            <li class="wow bounceInDown" data-wow-delay="0.6s">
+                                                <i class="fa fa-line-chart"></i>
+                                                <span>Stocks</span>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                </div>
-            </div>
-        </div>
-        </div>
-
-        <div class="container" id="projects">
-            <div class="row">
-                <h3 class="section_head">Personal Projects</h3>
-                <div class="col-lg-6">
-                    <a href="http://www.revolutionllc.net" target="_blank"><img style="margin-top: 10px; padding-bottom: 15px;" src="images/revpreview.jpg" class="img-rounded hori_center"></a>
-                    <table class="hori_center" style="width:100%;">
-                        <tr class="chunkfive">
-                            <td style="float: right; padding-right: 5px;">Description:</td>
-                            <td>Website for a project management business.</td>
-                        </tr>
-                        <tr class="chunkfive">
-                            <td style="float: right; padding-right: 5px;">Languages:</td>
-                            <td>HTML, CSS, JS</td>
-                        </tr>
-                        <tr class="chunkfive">
-                            <td style="float: right; padding-right: 5px;">Frameworks:</td>
-                            <td>Bootstrap, jQuery</td>
-                        </tr>
-                        <tr class="chunkfive">
-                            <td style="float: right; padding-right: 5px;">Github:</td>
-                            <td><a href="https://github.com/Bcantz27/Revolution" target="_blank">Source Code</a></td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="col-lg-6">
-                    <a href="http://trevanmcclure.com/" target="_blank"><img style="margin-top: 10px; padding-bottom: 15px;" src="images/trevpreview.jpg" class="img-rounded hori_center"></a>
-                    <table class="hori_center" style="width:100%;">
-                        <tr class="chunkfive">
-                            <td style="float: right; padding-right: 5px;">Description:</td>
-                            <td>Website for a musician to showcase his work.</td>
-                        </tr>
-                        <tr class="chunkfive">
-                            <td style="float: right; padding-right: 5px;">Languages:</td>
-                            <td>HTML, CSS, JS</td>
-                        </tr>
-                        <tr class="chunkfive">
-                            <td style="float: right; padding-right: 5px;">Frameworks:</td>
-                            <td>Bootstrap, jQuery</td>
-                        </tr>
-                        <tr class="chunkfive">
-                            <td style="float: right; padding-right: 5px;">Github:</td>
-                            <td><a href="https://github.com/Bcantz27/sweett" target="_blank">Source Code</a></td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="col-lg-6">
-                    <a href="http://bcantzdev.6te.net/" target="_blank"><img  style="margin-top: 10px; padding-bottom: 15px;" src="images/sspreview.jpg" class="img-rounded hori_center"></a>
-                    <table class="hori_center" style="width:100%;">
-                        <tr class="chunkfive">
-                            <td style="float: right; padding-right: 5px;">Description:</td>
-                            <td>A simon says game that saves scores to a database.</td>
-                        </tr>
-                        <tr class="chunkfive">
-                            <td style="float: right; padding-right: 5px;">Languages:</td>
-                            <td>HTML, CSS, JS, PHP</td>
-                        </tr>
-                        <tr class="chunkfive">
-                            <td style="float: right; padding-right: 5px;">Database:</td>
-                            <td>MySQL</td>
-                        </tr>
-                        <tr class="chunkfive">
-                            <td style="float: right; padding-right: 5px;">Github:</td>
-                            <td><a href="https://github.com/Bcantz27/SimonSays" target="_blank">Source Code</a></td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="col-lg-6">
-                    <a href="http://chitterchat.net" target="_blank"><img  style="margin-top: 10px; padding-bottom: 15px;" src="images/chitterchatpreview.jpg" class="img-rounded hori_center"></a>
-                    <table class="hori_center" style="width:100%;">
-                        <tr class="chunkfive">
-                            <td style="float: right; padding-right: 5px;">Description:</td>
-                            <td>A web application that allows users to chat in real-time using web sockets</td>
-                        </tr>
-                        <tr class="chunkfive">
-                            <td style="float: right; padding-right: 5px;">Languages:</td>
-                            <td>HTML, CSS/Jade, JS</td>
-                        </tr>
-                        <tr class="chunkfive">
-                            <td style="float: right; padding-right: 5px;">Database:</td>
-                            <td>MySQL</td>
-                        </tr>
-                        <tr class="chunkfive">
-                            <td style="float: right; padding-right: 5px;">Frameworks:</td>
-                            <td>Bootstrap, jQuery, Nodejs, Expressjs, SocketIO</td>
-                        </tr>
-                        <tr class="chunkfive">
-                            <td style="float: right; padding-right: 5px;">Github:</td>
-                            <td><a href="https://github.com/Bcantz27/ChitterChat" target="_blank">Source Code</a></td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-            <div class="row" style="margin-top: 15px">
-                <h1 class="section_head">School Projects</h1>
-                <div class="col-lg-10 col-lg-offset-1">
-                    <div class="well">
-                        <iframe src="https://drive.google.com/embeddedfolderview?id=0B4h5kbO5y30mfjNqclZQT0N1cWNEbHZsMS00eXRlV0xUbTJINTRHUk1yS19oSFFsbUllajA#list" scrolling="no" width="100%" height="270" frameborder="0" style="margin: 0;"></iframe>
                     </div>
                 </div>
-            </div>
+            </section>
+
+            <hr class="le-hr">
+
+            <section id="education">
+                <div class="sticky-paper-head has-shadow ">
+                    <div class="content">
+                        <h1>education</h1>
+                    </div>
+                </div>
+
+                <div class="sticky-paper-body has-shadow ">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="timeline-holder wow bounceInUp">
+                                    <div class="timeline-head event-head">
+                                        <div class="icon">
+                                            <i class="fa fa-university"></i>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <div class="event-item timeline-item">
+                                            <div class="event-title left">
+                                                <h1>Computer Engineering</h1>
+                                                <h4>Penn State University <small>2010-2015</small></h4>
+                                            </div>
+                                            <div class="event-content timeline-content right">
+                                                <strong>Course List:</strong>
+                                                <ul class="skill-list" style="display: block">
+                                                    <li>Data Structures and Algorithms.</li>
+                                                    <li>Object Oriented Programming.</li>
+                                                    <li>Computer Organization and Design.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="event-item timeline-item">
+                                            <div class="event-title left">
+                                                <h1>Highschool</h1>
+                                                <h4>Marple Newtown High <small>2006-2010</small></h4>
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="le-hr">
+
+            <section id="experiences">
+                <div class="sticky-paper-head has-shadow ">
+                    <div class="content">
+                        <h1>experiences</h1>
+                    </div>
+                </div>
+
+                <div class="sticky-paper-body has-shadow ">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="timeline-holder wow bounceInUp">
+                                    <div class="timeline-head event-head">
+                                        <div class="icon">
+                                            <i class="fa fa-suitcase"></i>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <div class="event-item timeline-item">
+                                            <div class="event-title left">
+                                                <h1>freelance web developer</h1>
+                                                <h4><small>2015-now</small></h4>
+                                            </div>
+                                            <div class="event-content timeline-content right">
+                                                <strong>Responsibilites:</strong>
+                                                <ul class="skill-list" style="display:block;">
+                                                    <li>Communicate with client and address needs.</li>
+                                                    <li>Create scalable responsive websites.</li>
+                                                    <li>Setup and deploy live website.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="event-item timeline-item">
+                                            <div class="event-title left">
+                                                <h1>System Administrator</h1>
+                                                <h4>PWNR Games <small>2012-2013</small></h4>
+                                            </div>                                           
+                                            <div class="event-content timeline-content right">
+                                                <strong>Responsibilites:</strong>
+                                                <ul class="skill-list" style="display:block;">
+                                                    <li>Monitored four servers hosted on a Linux machine.</li>
+                                                    <li>Interacted with the servers through SSH terminal.</li>
+                                                    <li>Fixed any performance issues that arose.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="event-item timeline-item">
+                                            <div class="event-title left">
+                                                <h1>Bakery Associate</h1>
+                                                <h4>Giant Foods <small>2010-2012</small></h4>
+                                            </div>
+                                            <div class="event-content timeline-content right">
+                                                <strong>Responsibilites:</strong>
+                                                <ul class="skill-list" style="display:block;">
+                                                    <li>Responsible for managing the bakery.</li>
+                                                    <li>Prepared all the products that need to be baked.</li>
+                                                    <li>Communicate with customers.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="le-hr">
+
+            <section id="skills">
+                <div class="sticky-paper-head has-shadow ">
+                    <div class="content">
+                        <h1>skills</h1>
+                    </div>
+                </div>
+
+                <div class="sticky-paper-body has-shadow ">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="timeline-holder wow bounceInUp">
+                                    <div id="skills-head" class="timeline-head">
+                                        <div class="icon">
+                                            <i class="fa  fa-tasks"></i>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <div class="skill-holder timeline-item">
+                                            <div class="skill-item left">
+                                                <div class="wow bounceInDown skill" data-text="OS" data-info="Systems" data-percent="0" data-fill="#272425"></div>      
+                                            </div>
+                                            <div class="event-content timeline-content right">
+                                                <ul class="skill-list wow bounceInUp">
+                                                    <li>Windows XP/7</li>
+                                                    <li>Mac OSX</li>
+                                                    <li>Linux Ubuntu/Red Hat</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="skill-holder timeline-item">
+                                            <div class="skill-item left">
+                                                <div class="wow bounceInDown skill" data-text="Tools" data-info="Applications" data-percent="0" data-fill="#272425"></div>      
+                                            </div>                                            
+                                            <div class="event-content timeline-content right">
+                                                <ul class="skill-list wow bounceInUp">
+                                                    <li>Git</li>
+                                                    <li>FileZilla</li>
+                                                    <li>Image Manipulation</li>
+                                                </ul>
+                                                <ul class="skill-list wow bounceInUp">
+                                                    <li>Grunt/Gulp</li>
+                                                    <li>NPM</li>
+                                                    <li>Visual Studios</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="skill-holder timeline-item">
+                                            <div class="skill-item left">
+                                                <div class="wow bounceInDown skill" data-text="100%" data-info="HTML" data-percent="100" data-fill="#272425"></div>
+                                            </div>
+                                            <div class="event-content timeline-content right">
+                                                <ul class="skill-list wow bounceInUp">
+                                                    <li>Templating (Jade)</li>
+                                                    <li>HTML5 Video/Audio</li>
+                                                    <li>Structured Code</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="skill-holder timeline-item">
+                                            <div class="skill-item left">
+                                                <div class="wow bounceInDown skill" data-text="100%" data-info="CSS" data-percent="100" data-fill="#272425"></div>
+                                            </div>
+                                            <div class="event-content timeline-content right">
+                                                <ul class="skill-list wow bounceInUp">
+                                                    <li>Preprocessing (SASS/LESS)</li>
+                                                    <li>Modular/Responsive Code</li>
+                                                    <li>Bootstrap</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="skill-holder timeline-item">
+                                            <div class="skill-item left">
+                                                <div class="wow bounceInDown skill" data-text="85%" data-info="Javascript" data-percent="85" data-fill="#272425"></div>
+                                            </div>
+                                            <div class="event-content timeline-content right">
+                                                <ul class="skill-list wow bounceInUp">
+                                                    <li>jQuery</li>
+                                                    <li>RESTful web design</li>
+                                                    <li>Node.js</li>
+                                                </ul>
+                                                <ul class="skill-list wow bounceInUp">
+                                                    <li>Express.js</li>
+                                                    <li>MVC Design</li>
+                                                    <li>Web Sockets</li>
+                                                </ul>                                               
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="skill-holder timeline-item">
+                                            <div class="skill-item left">
+                                                <div class="wow bounceInDown skill" data-text="75%" data-info="C++/Java" data-percent="75" data-fill="#272425"></div>
+                                            </div>
+                                            <div class="event-content timeline-content right">
+                                                <ul class="skill-list wow bounceInUp">
+                                                    <li>Inheritance (OOP)</li>
+                                                    <li>Data Structures</li>
+                                                    <li>Singleton Design</li>
+                                                </ul>
+                                                 <ul class="skill-list wow bounceInUp">
+                                                    <li>Dependency Injection</li>
+                                                    <li>Cohesion and Decoupling</li>
+                                                    <li>Polymorphism</li>
+                                                </ul>                                               
+                                            </div>
+                                        </div>
+                                    
+                                         <div class="skill-holder timeline-item">
+                                            <div class="skill-item left">
+                                                <div class="wow bounceInDown skill" data-text="95%" data-info="Database's" data-percent="95" data-fill="#272425"></div>
+                                            </div>
+                                            <div class="event-content timeline-content right">
+                                                <ul class="skill-list wow bounceInUp">
+                                                    <li>MySQL</li>
+                                                    <li>Postgres</li>
+                                                    <li>MongoDB</li>
+                                                </ul>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <hr class="le-hr">
+
+            <section id="portfolio">
+                <div class="sticky-paper-head has-shadow ">
+                    <div class="content">
+                        <h1>portfolio</h1>
+                    </div>
+                </div>
+
+                <div class="sticky-paper-body has-shadow ">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="portfolio-holder">
+                                    <div id="portfolio-grid" class="row">
+                                        <figure class="col-xs-12 col-sm-6 col-md-4 portfolio-item ">
+                                            <a href="http://www.ChitterChat.net">
+                                                <img alt="" src="images/portfolio/work01.jpg" />
+                                            </a>
+                                            <div class="holder">
+                                                <div class="paper has-shadow title">
+                                                    <div class="content">
+                                                        Chitter Chat
+                                                        <a class="fa fa-github" target="_blank" href="https://github.com/Bcantz27/ChitterChat"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="paper has-shadow category">
+                                                    <div class="content">
+                                                        Node.js, Bootstrap, MySQL
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </figure>
+
+                                        <figure class="col-xs-12 col-sm-6 col-md-4 portfolio-item">
+                                            <a href="http://trevanmusic.com/">
+                                                <img alt="" src="images/portfolio/work02.jpg" />
+                                            </a>
+                                            <div class="holder">
+                                                <div class="paper has-shadow title">
+                                                    <div class="content">
+                                                        Trevan Music
+                                                        <a class="fa fa-github" target="_blank" href="https://github.com/Bcantz27/SweetT"></a>
+                                                    </div>
+
+                                                </div>
+                                                <div class="paper has-shadow category">
+                                                    <div class="content">
+                                                        Bootstrap, jQuery 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </figure>
+
+                                        <figure class="col-xs-12 col-sm-6 col-md-4 portfolio-item">
+                                            <a href="http://bcantzdev.6te.net/">
+                                                <img alt="" src="images/portfolio/work04.jpg" />
+                                            </a>
+
+                                            <div class="holder">
+                                                <div class="paper has-shadow title">
+                                                    <div class="content">
+                                                        Simon Says
+                                                        <a class="fa fa-github" target="_blank" href="https://github.com/Bcantz27/SimonSays"></a>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="paper has-shadow category">
+                                                    <div class="content">
+                                                        Bootstrap, PHP, MySQL
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </figure>
+
+                                        <figure class="col-xs-12 col-sm-6 col-md-4 portfolio-item">
+                                            <a href="http://revolutionllc.net/">
+                                                <img alt="" src="images/portfolio/work03.jpg" />
+                                            </a>
+                                            <div class="holder">
+                                                <div class="paper has-shadow title">
+                                                    <div class="content">
+                                                        Revolution
+                                                        <a class="fa fa-github" target="_blank" href="https://github.com/Bcantz27/Revolution"></a>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="paper has-shadow category">
+                                                    <div class="content">
+                                                        Bootstrap, jQuery 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </figure>
+                                        <figure class="col-xs-12 col-sm-6 col-md-4 portfolio-item">
+                                            <a href="http://www.twitch-giveaways.com">
+                                                <img alt="" src="images/portfolio/work05.jpg" />
+                                            </a>
+                                            <div class="holder">
+                                                <div class="paper  has-shadow title">
+                                                    <div class="content">
+                                                        Twitch Giveaways
+                                                        <a class="fa fa-github" target="_blank" href="#"></a>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="paper has-shadow category">
+                                                    <div class="content">
+                                                        Node.js, Express.js, MySQL
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </figure>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="le-hr">
+
+
+            <section id="contact">
+                <div class="sticky-paper-head has-shadow ">
+                    <div class="content">
+                        <h1>contact</h1>
+                    </div>
+                </div>
+
+                <div class="sticky-paper-body has-shadow ">
+                    <div class="content">
+                        <div class="row row-contact">
+
+                            <div class="col-xs-12 col-md-8">
+                                <div class="contact-form-holder">
+
+                                    <div class="message-box"></div>
+
+                                    <form id="contact-form" class="contact-form " method="post">
+                                        <div class="col-xs-12 col-sm-6 no-margin">
+                                            <div class="control-group">
+                                                <div class="controls">
+                                                    <input id="cname" data-placeholder="Your Name*" name="name" size="25" class="le-input  required col-xs-12" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 no-margin">
+                                            <div class="control-group">
+                                                <div class="controls">
+                                                    <input id="cemail" data-placeholder="Your Email*" name="email" class="le-input  required email col-xs-12" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12  no-margin">
+                                            <div class="control-group">
+                                                <div class="controls">
+                                                    <input id="subject" data-placeholder="Subject" name="subject" size="25" class="le-input col-xs-12" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 no-margin">
+                                            <div class="control-group">
+                                                <div class="controls">
+                                                    <textarea id="ccomment" class=" le-input col-xs-12 no-margin" name="message" rows="9" cols="5" data-placeholder="Message"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 no-margin">
+                                            <div class="button-holder">
+                                                <input class="submit  le-btn big" type="submit" value="send" />
+                                            </div>
+                                            <div id="loading" class="pull-right">
+                                                <img alt="" src="images/loader.gif" />
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-md-4">
+                                <div class="contact-info">
+                                    <ul>
+                                        <li>
+                                            <label>email:</label> <a href="mailto:bryancantz@comcast.net">bryancantz@comcast.net</a>
+                                        </li>
+                                    </ul>
+
+                                    <div class="social-icons">
+                                        <ul>
+                                            <li>
+                                                <a class="fa fa-facebook" target="_blank" href="https://www.facebook.com/bryan.cantz"></a>
+                                            </li>
+                                            <li>
+                                                <a class="fa fa-twitter" target="_blank" href="https://twitter.com/BCantz27"></a>
+                                            </li>
+                                            <li>
+                                                <a class="fa fa-linkedin" target="_blank" href="https://www.linkedin.com/pub/bryan-cantz/90/385/351"></a>
+                                            </li>
+                                            <li>
+                                                <a class="fa fa-github" target="_blank" href="https://github.com/Bcantz27"></a>
+                                            </li>
+                                            <li>
+                                                <a href="./Resume.pdf" target="_blank" class="fa fa-download"></a>
+                                            </li>                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section id="footer">
+
+            </section>
+
+
         </div>
 
-        <div class="container" id="edu">
-            <div class="row">
-                <h3 class="section_head">Experience</h3>
-                <div class="col-lg-2 col-lg-offset-2">
-                    <a href="http://www.psu.edu/" target="_blank"><img class="img-responsive hori_center" src="images/penn-state.png"></a>
-                </div>
-                <div class="col-lg-6">
-                    <p style="margin: 0; font-size: 18px;" class="chunkfive tpadding"><strong>Pennsylvania State University</strong><br></p>
-                    <p>
-                      Studied Computer Engineering <br>
-                      From 2010 - 2015
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-2 col-lg-offset-2">
-                    <a href="https://minecraft.net/" target="_blank"><img class="img-responsive hori_center" src="images/minecraft.png"></a>
-                </div>
-                <div class="col-lg-6">
-                    <p style="margin: 0; font-size: 16px;" class="chunkfive"><b>Manager of Game Servers</b><br></p>
-                    <p style="margin: 0;"><b>Average Concurrent Users: 75 </b></p>
-                    <p style="margin: 0;">From 2012 - 2013<br>
-                      <b>Responsibilites:</b>
-                      <ul>
-                          <li>Monitored four servers hosted on a Linux machine.</li>
-                          <li>Interacted with the servers through SSH command line.</li>
-                          <li>Kept Bukkit and the server’s plugins up-to-date.</li>
-                          <li>Fixed any performance issues that arose.</li>
-                      </ul>
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-2 col-lg-offset-2">
-                    <a href="http://www.mnsd.net/" target="_blank"><img class="img-responsive hori_center" src="images/mnsd.png"></a>
-                </div>
-                <div class="col-lg-6">
-                    <p style="margin: 0; font-size: 18px;" class="chunkfive tpadding"><strong>Marple Newtown High School</strong><br></p>
-                    <p>From 2006 - 2010</p>
-                </div>
-            </div>
-        </div>
-    </body>
+    </div>
+
+    <a class="goto-top" href="#gotop"></a>
+
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="css/bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/css_browser_selector.js"></script>
+
+    <script type="text/javascript" src="js/jquery.easing-1.3.js"></script>
+
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.js"></script>
+    <script type="text/javascript" src="js/jquery.address-1.5.min.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="js/jquery.circliful.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.circliful.min.js"></script>
+
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+
+
+<!-- Mirrored from amindiary.com/demo/papyrus/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 23 Sep 2015 18:25:27 GMT -->
 
 </html>
